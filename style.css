@@ -67,6 +67,16 @@ li{
   font-size: 8.5pt;
 }
 
+a {
+  color: #444;
+  text-decoration: none;
+}
+
+.link-text {
+  color: #3066BE;
+  text-decoration: none;
+}
+
 /* main */
 
 /** big title **/
@@ -332,8 +342,7 @@ li{
 #contact ul{
   margin-top: 0.05in;
   padding-left: 0;
-  font-family: "Source Code Pro";
-  font-weight: 400;
+  font-weight: 325;
   line-height: 1.75;
 }
 
