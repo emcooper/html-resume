@@ -28,6 +28,12 @@
   --date-block-width: .8in;
 
   --main-blocks-title-icon-offset-left: -19pt;
+
+  /** font size */
+  --font-size-main: 9pt;
+  --font-size-main-section-titles: 13pt;
+  --font-size-main-section-subtitles: 10pt;
+  --font-size-main-section-place: 9pt;
 }
 
 body{
@@ -54,7 +60,7 @@ li{
   float: right;
   width: var(--main-width);
   padding: 0.25in 0.25in 0 0.25in;
-  font-size: 7pt;
+  font-size: var(--font-size-main);
 }
 
 #sidebar{
@@ -93,7 +99,7 @@ a {
 
 #title h1{
   font-weight: 300;
-  font-size: 18pt;
+  font-size: 24pt;
   line-height: 1.5;
 }
 
@@ -103,13 +109,14 @@ a {
 }
 
 .subtitle{
-  font-size: 8pt;
+  font-size: 10pt;
 }
 
 /*** categorial blocks ***/
 
 .main-block{
   margin-top: 0.1in;
+  margin-bottom: .3in;
 }
 
 #main h2{
@@ -118,7 +125,7 @@ a {
   /* XXX: 0.5px for aligning fx printing */
   left: calc((var(--date-block-width) + var(--decorator-horizontal-margin)));
   font-weight: 400;
-  font-size: 11pt;
+  font-size: var(--font-size-main-section-titles);
   color: #555;
 }
 
@@ -244,6 +251,7 @@ a {
   flex: 1 0 0;
   padding-left: var(--decorator-horizontal-margin);
   padding-top: calc(var(--row-blocks-padding-top) - 0.5pt) !important; /* not sure why but this is needed for better alignment */
+  padding-bottom: .05in;
 }
 
 .details header{
@@ -251,7 +259,7 @@ a {
 }
 
 .details h3{
-  font-size: 9pt;
+  font-size: var(--font-size-main-section-subtitles);
 }
 
 .main-block:not(.concise) .details div{
@@ -270,7 +278,8 @@ a {
 
 .details .place{
   float: left;
-  font-size: 7.5pt;
+  font-size: var(--font-size-main-section-place);
+  padding: 4px 0px 8px 0px;
 }
 
 .details .location{
