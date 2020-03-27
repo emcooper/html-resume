@@ -74,6 +74,11 @@ li{
 }
 
 a {
+  color: #3066BE;
+  text-decoration: none;
+}
+
+a > i {
   color: #444;
   text-decoration: none;
 }
