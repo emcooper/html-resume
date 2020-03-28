@@ -373,3 +373,7 @@ a > i {
   margin: 0.05in 0 0.15in;
   padding: 0;
 }
+
+.offset-1 {
+  margin-left: -2.5px;
+}
